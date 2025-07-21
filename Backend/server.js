@@ -10,7 +10,7 @@ const pool = new Pool({
     user: 'postgres',
     host: 'postgres',
     database: 'new_employee_db',
-    password: 'admin123',
+    password: 'admin834',
     port: 5432,
 });
 
@@ -36,11 +36,11 @@ pool.connect((err, client, release) => {
 app.use(cors({
     origin: (origin, callback) => {
         const allowedOrigins = [
-            'http://44.223.23.145:5500',
+            'http://44.203.250.66:5500',
             'http://127.0.0.1:5500',
-            'http://44.223.23.145:3426',
-            'http://44.223.23.145:8049',
-            'http://44.223.23.145:8050',
+            'http://44.203.250.66:3426',
+            'http://44.203.250.66:8049',
+            'http://44.203.250.66:8050',
         ];
 
         console.log('CORS request from origin:', origin);
